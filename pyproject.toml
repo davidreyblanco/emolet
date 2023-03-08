@@ -5,7 +5,7 @@ description = ""
 authors = ["David Rey Blanco <drey@idealista.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8,<3.9.7 || >3.9.7,<4.0"
 
 [tool.poetry.dev-dependencies]
 pandas = "^1.5.3"
