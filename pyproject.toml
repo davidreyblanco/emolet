@@ -6,6 +6,9 @@ authors = ["David Rey Blanco <drey@idealista.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.9.7 || >3.9.7,<4.0"
+joblib = "^1.2.0"
+numpy = "^1.24.2"
+sklearn = "^0.0.post2"
 
 [tool.poetry.dev-dependencies]
 pandas = "^1.5.3"
