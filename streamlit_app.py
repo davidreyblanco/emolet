@@ -128,7 +128,7 @@ if col1.button('Obtener predicción'):
     col2.write('Mapa de situación')
     col2.map(df)
     predicted_price = predict_price(df_modelo, idx, input_data, best_xgb_model)
-    min_price = predicted_price * 0.8
-    max_price = predicted_price * 1.1
+    min_price = round(predicted_price * 0.8, 2)
+    max_price = round(predicted_price * 1.1, 2)
     st.write('El precio de la casa es:', str(round(constructed_area * predicted_price)) + ' € -> ' + str(predicted_price) + ' €/m²')
     st.write('El intervalo de confianza es: [',str(min_price),' - ', str(max_price) + ']')
